@@ -81,7 +81,7 @@ def find_cool(array)
   array.each do |hash|
     hash.each do |key, value|
       cool_hash << hash if key == :temperature && value == "cool"
-    end
+      end
     end
   cool_hash
 end
