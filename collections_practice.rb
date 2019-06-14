@@ -73,12 +73,16 @@ def merge_data(keys, data)
       end
     end
   end
-
   merged_array
 end
 
-def find_cool
-
+def find_cool(array)
+  cool_hash = []
+  array.each do |hash|
+    hash.each do |key, value|
+      cool_hash << hash if key == :temperature && value == "cool"
+    end
+  cool_hash
 end
 
 def organize_schools
