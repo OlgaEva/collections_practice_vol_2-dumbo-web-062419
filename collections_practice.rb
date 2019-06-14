@@ -86,6 +86,8 @@ def find_cool(array)
   cool_hash
 end
 
-def organize_schools
+def organize_schools(hash)
+locations : {}
 
+hash.values.each { |location| locations[location.values[0]] = [] }
 end
